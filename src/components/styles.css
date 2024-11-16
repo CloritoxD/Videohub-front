@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
-    background-image: url('https://brandemia.org/contenido/subidas/2023/01/historia-de-coca-cola.png');
+    background-image: url('https://brandemia.org/contenido/subidas/2023/01/historia-de-coca-cola.png'); /* Fondo de la app */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
