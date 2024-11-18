@@ -32,7 +32,7 @@ function Login() {
     <div className="login-wrapper">
       <div className="login-container">
         <div className="login-header">
-          <img src="/cocacola-logo-cocacola-icon-free-free-vector.jpg" alt="Coca Cola Logo" className="brand-logo" />
+          <img src="/Imagen_de_WhatsApp_2024-11-18_a_las_16.29.15_ae2981f7-removebg-preview.png" alt="Coca Cola Logo" className="brand-logo" />
           <h2>¡Bienvenido de vuelta!</h2>
         </div>
         
@@ -58,11 +58,6 @@ function Login() {
           >
             Regístrate aquí
           </button>
-        </div>
-
-        <div className="promo-images">
-          <img src="/vn2l7gUp_400x400.jpg" alt="Promoción 1" className="promo-img" />
-          <img src="/logo192.png" alt="Promoción 2" className="promo-img" />
         </div>
       </div>
     </div>

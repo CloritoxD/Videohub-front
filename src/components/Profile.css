@@ -1,0 +1,80 @@
+body {
+    background-color: #f0f4f8; /* Color de fondo suave */
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.profile-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.9)); /* Fondo blanco con un toque de rojo */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container h2 {
+    color: #e31837; /* Color rojo */
+    font-size: 28px;
+}
+
+.profile-content {
+    margin: 20px 0;
+}
+
+.profile-content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.edit-button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #e31837, #99ccff); /* Botón con rojo y azul claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0,  0.1);
+}
+
+.profile-footer p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.logout-link {
+    background: transparent;
+    color: #e31837;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.logout-link:hover {
+    color: #ff4b6e;
+}

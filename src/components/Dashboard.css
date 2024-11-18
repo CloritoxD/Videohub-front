@@ -3,51 +3,45 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-.register-wrapper {
+.dashboard-wrapper {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px;
 }
 
-.register-container {
+.dashboard-container {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.9)); /* Fondo blanco con un toque de rojo */
   border-radius: 15px;
   padding: 40px;
-  max-width: 400px;
+  max-width: 800px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  position: relative;
+  margin-top: 20px;
 }
 
-.register-header {
+.dashboard-header {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.register-container h2 {
+.dashboard-container h2 {
   color: #e31837; /* Color rojo */
-  font-size: 24px;
+  font-size: 28px;
 }
 
-.register-container input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid #e31837; /* Borde rojo */
-  border-radius: 5px;
-  background: rgba(204, 255, 255, 0.9); /* Fondo azul claro */
-  transition: border-color 0.3s ease;
+.dashboard-content {
+  margin: 20px 0;
 }
 
-.register-container input:focus {
-  border-color: #99ccff; /* Borde azul claro al enfocar */
-  outline: none;
+.dashboard-content p {
+  color: #333;
+  line-height: 1.6;
 }
 
-.register-container button {
-  width: 100%;
-  padding: 10px;
+.dashboard-button {
+  padding: 10px 20px;
   background: linear-gradient(45deg, #e31837, #99ccff); /* Botón con rojo y azul claro */
   color: white;
   border: none;
@@ -56,54 +50,31 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.register-container button:hover {
+.dashboard-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.register-footer {
+.dashboard-footer {
   text-align: center;
   margin-top: 20px;
   padding-top: 15px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.register-footer p {
+.dashboard-footer p {
   color: #666;
   margin-bottom: 10px;
 }
 
-.login-link {
+.logout-link {
   background: transparent;
   color: #e31837;
   text-decoration: underline;
-  padding: 5px 10px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.login-link:hover {
+.logout-link:hover {
   color: #ff4b6e;
-}
-
-.promo-images {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.promo-img {
-  width: 25%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.promo-img:hover {
-  transform: scale(1.05);
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
 }

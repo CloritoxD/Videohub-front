@@ -35,7 +35,7 @@ function Register() {
     <div className="register-wrapper">
       <div className="register-container">
         <div className="register-header">
-          <img src="/cocacola-logo-cocacola-icon-free-free-vector.jpg" alt="Coca Cola Logo" className="brand-logo" />
+          <img src="/Imagen_de_WhatsApp_2024-11-18_a_las_16.29.15_ae2981f7-removebg-preview.png" alt="Coca Cola Logo" className="brand-logo" />
           <h2>¡Únete a nuestra promoción!</h2>
           <p className="register-subtitle">Regístrate y participa por increíbles premios</p>
         </div>

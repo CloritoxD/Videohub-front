@@ -1,0 +1,115 @@
+body {
+    background-color: #f0f4f8; /* Color de fondo suave */
+    font-family: 'Arial', sans-serif;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.9)); /* Fondo blanco con un toque de rojo */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+    width: 120px;
+    margin-bottom: 15px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.login-container h2 {
+    color: #e31837; /* Color rojo */
+    font-size: 24px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #e31837; /* Borde rojo */
+    border-radius: 5px;
+    background: rgba(204, 255, 255, 0.9); /* Fondo azul claro */
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #99ccff; /* Borde azul claro al enfocar */
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, #e31837, #99ccff); /* Botón con rojo y azul claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-footer p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.register-link {
+    background: transparent;
+    color: #e31837;
+    text-decoration: underline;
+    padding: 5px 10px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover {
+    color: #ff4b6e;
+}
+
+.promo-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.promo-img {
+    width: 25%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.promo-img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
