@@ -9,9 +9,9 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { username, password });
+      //const response = await axios.post('http://localhost:5000/api/login', { username, password });
       // Replace with production URL when deploying
-      //const response = await axios.post('https://proyecto-promociona.vercel.app/api/login', { username, password });
+      const response = await axios.post('https://videohub-backed.vercel.app/api/login', { username, password });
 
       if (response.data.success) {
         const userId = response.data.user._id; // Get userId from response

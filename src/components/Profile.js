@@ -32,7 +32,7 @@ function Profile() {
 
             // Enviar el video al servidor
             try {
-                axios.post('http://localhost:5000/subida', formData)
+                axios.post('https://videohub-backed.vercel.app/subida', formData)
   .then((response) => {  // Asegúrate de que 'response' esté definido aquí
     console.log('Video subido:', response.data);
   })
@@ -48,7 +48,7 @@ function Profile() {
 
     const controlEliminar = async () => {
         try {
-            const response = axios.post('http://localhost:5000/eliminar', { videoName: 'your_video_name.mp4' })
+            const response = axios.post('https://videohub-backed.vercel.app/eliminar', { videoName: 'your_video_name.mp4' })
             if (response.status === 200) {
                 setVideoUrl("/videos/default.mp4"); // URL predeterminada para el video
                 setUploadMessage("Video eliminado correctamente.");

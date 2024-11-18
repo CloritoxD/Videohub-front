@@ -8,7 +8,8 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/videos'); // Asegúrate de que la URL sea correcta
+        const response = await axios.get('https://videohub-backed.vercel.app/videos');
+        //const response = await axios.get('http://localhost:5000/videos'); // Asegúrate de que la URL sea correcta
         setVideos(response.data);
       } catch (error) {
         console.error("Error al obtener los videos:", error);

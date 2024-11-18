@@ -16,8 +16,8 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/register', userData);
-      //const response = await axios.post('https://proyecto-promociona.vercel.app/api/register', userData);
+      //const response = await axios.post('http://localhost:5000/api/register', userData);
+      const response = await axios.post('https://videohub-backed.vercel.app/api/register', userData);
       if (response.data.success) {
         alert('Usuario registrado correctamente');
         window.location.href = '/';
