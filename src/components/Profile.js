@@ -100,7 +100,7 @@ function Profile() {
                 <button type="submit" className="btn btn-primary w-100" onClick={controlSubida}>
                     Subir video
                 </button>
-                <Link to="/profile">
+                <Link to="/dashboard">
             <button style={{ marginTop: '20px', padding: '10px 20px', fontSize: '16px' }}>
             Ir al Menu
             </button>
