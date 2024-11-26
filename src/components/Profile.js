@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Profile.css'; // Asegúrate de tener tus estilos
+import { Link } from 'react-router-dom'; // Importa Link
 
 function Profile() {
     const [videoFile, setVideoFile] = useState(null);
@@ -99,6 +100,11 @@ function Profile() {
                 <button type="submit" className="btn btn-primary w-100" onClick={controlSubida}>
                     Subir video
                 </button>
+                <Link to="/profile">
+            <button style={{ marginTop: '20px', padding: '10px 20px', fontSize: '16px' }}>
+            Ir al Menu
+            </button>
+            </Link>
             </form>
 
             {uploadMessage && <p>{uploadMessage}</p>}
