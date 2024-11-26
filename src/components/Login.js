@@ -9,15 +9,17 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      //const response = await axios.post('http://localhost:5000/api/login', { username, password });
-      // Replace with production URL when deploying
+      // Enviar solicitud al backend
       const response = await axios.post('https://videohub-backed.vercel.app/api/login', { username, password });
 
       if (response.data.success) {
-        const userId = response.data.user._id; // Get userId from response
-        localStorage.setItem('userId', userId); // Store userId in localStorage
+        // Guardar userId y correo en localStorage
+        const userId = response.data.user._id;
+        const correo = response.data.user.correo; // Obtener correo desde la respuesta
+        localStorage.setItem('userId', userId);
+        localStorage.setItem('correo', correo); // Guardar el correo en localStorage
 
-        // Redirect based on user type
+        // Redirigir según el tipo de usuario
         window.location.href = response.data.userType === 'user' ? '/dashboard' : '/admin-dashboard';
       } else {
         alert('Login incorrecto');
