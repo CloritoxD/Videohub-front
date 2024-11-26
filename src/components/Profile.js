@@ -99,6 +99,12 @@ function Profile() {
                 <button type="submit" className="btn btn-primary w-100" onClick={controlSubida}>
                     Subir video
                 </button>
+           {/* Botón para ir al menu */}
+           <Link to="/Dashboard">
+            <button style={{ marginTop: '20px', padding: '10px 20px', fontSize: '16px' }}>
+            Al menu principal
+            </button>
+            </Link>
             </form>
 
             {uploadMessage && <p>{uploadMessage}</p>}
